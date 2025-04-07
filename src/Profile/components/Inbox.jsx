@@ -164,7 +164,7 @@ function Inbox() {
         <SendBirdProvider appId={appId} userId={userId} nickname={user?.fullName} profileUrl={user?.imageUrl}>
           <div className="grid md:grid-cols-3 grid-cols-1 h-full gap-3  overflow-hidden">
             <div className="border border-slate-500 rounded-lg shadow-lg">
-              <GroupChannelList onChannelSelect={handleChannelSelect} />
+              <GroupChannelList onChannelSelect={handleChannelSelect} channelListQueryParams={{ includeEmpty: true }} />
             </div>
             <div className="md:col-span-2 border border-slate-500  rounded-lg shadow-lg">
               {channelUrl ? <GroupChannel channelUrl={channelUrl} /> : <div className="flex items-center justify-center h-full text-gray-500">Select a conversation or start a new chat</div>}
