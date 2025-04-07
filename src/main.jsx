@@ -10,6 +10,8 @@ import AddListing from "./Add Listing";
 import SearchByCategory from "./search/[category]/SearchByCategory";
 import SearchResults from "./search/index";
 import ListingDetails from "./listing-details/[id]";
+import { Home } from "lucide-react";
+import { HomeButton } from "./components/HomeButton";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,7 @@ createRoot(document.getElementById("root")).render(
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <RouterProvider router={router} />
       <Toaster />
+      <HomeButton />
     </ClerkProvider>
   </StrictMode>
 );

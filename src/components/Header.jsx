@@ -10,9 +10,9 @@ function Header() {
     <div className="flex justify-between items-center p-5 shadow-md">
       <img src="/logo.png" alt="logo" className="h-12 object-cover" />
 
-      <div>
+      <div className="hidden md:block">
         <Link to="/">
-          <div className="font-medium hover:scale-105 transition-all cursor-pointer">
+          <div className="font-medium hover:scale-105 transition-all cursor-pointer ">
             <IoMdHome className="text-3xl" />
           </div>
         </Link>
